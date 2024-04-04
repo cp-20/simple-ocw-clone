@@ -3,8 +3,6 @@ import { StatusCode } from 'hono/utils/http-status';
 
 const app = new Hono();
 
-const baseUrl = 'https://www.ocw.titech.ac.jp';
-
 app.get('*', async (c) => {
   console.log(`Request: ${c.req.path}`);
 
